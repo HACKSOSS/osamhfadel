@@ -1,0 +1,33 @@
+buildscript {
+    repositories {
+        google() // تأكد من وجود هذا المستودع
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.google.gms:google-services:4.4.0'  // إصدار محدث
+        classpath 'com.android.tools.build:gradle:8.2.2'
+    }
+}
+
+allprojects {
+    repositories {
+        google() // إضافة مستودع Google
+        mavenCentral() // إضافة Maven Central
+    }
+}
+
+rootProject.buildDir = "../build" // تحديد مسار مجلد البناء للجذر
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}" // مسار البناء لكل مشروع فرعي
+    repositories {
+        google() // تأكد من وجود مستودع Google داخل المشاريع الفرعية
+        mavenCentral() // تأكد من وجود Maven Central
+    }
+}
+subprojects {
+    project.evaluationDependsOn(":app") // جعل المشروع الرئيسي يعتمد على تطبيق ":app"
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir // حذف مجلد البناء الجذري عند تنفيذ الأمر "clean"
+}
