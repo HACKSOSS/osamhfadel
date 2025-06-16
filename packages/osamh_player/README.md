@@ -22,9 +22,7 @@
 ---
 
 ## ✨ ما هو Osamh Player؟
-
-`osamh_player` هو حل فيديو متكامل مبني خصيصًا لمطوري Flutter الذين يحتاجون إلى تجربة وسائط غنية وقوية وسلسة.  
-صُمم ليكون أكثر من مجرد مشغّل فيديو، فهو يدعم الترجمة، DRM، البث المباشر، التشغيل داخل القوائم، التخصيص الكامل، وأكثر.
+osamh_player هو حل فيديو متكامل ومخصص لمطوري Flutter الذين يسعون لتقديم تجربة وسائط غنية وسلسة. أكثر من مجرد مشغل فيديو عادي، يجمع osamh_player بين الأداء القوي والمرونة العالية،
 
 ---
 
@@ -56,14 +54,6 @@ OsamhPlayer(controller: controller);
 
 ---
 
-## 📚 التوثيق والدعم
-
-- 🌐 [الموقع الرسمي](https://osamhfadel.com/projects/osamhplayer)  
-- 💻 [كود المصدر](https://github.com/HACKSOSS/osamhplayer)  
-- 📦 [مثال عملي (example)](https://github.com/HACKSOSS/osamhplayer/tree/main/example)  
-
----
-
 <div align="center" style="margin: 40px 0;">
   <img src="https://github.com/HACKSOSS/osamhfadel/blob/main/packages/osamh_player/media/osamh.jpg" width="450" style="border-radius: 50%; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" alt="Osamh Fadel"/>
   <h2 style="margin-top: 10px; font-weight: 800; color: #1E40AF;">من هو أسامة فاضل</h2>
@@ -79,9 +69,9 @@ OsamhPlayer(controller: controller);
 
 - 🌍 الموقع: [osamhfadel.com](https://osamhfadel.com)  
 - 📧 البريد الإلكتروني: [programmer.osamh.fadel@gmail.com](mailto:programmer.osamh.fadel@gmail.com)  
-- ☎️ الهاتف / واتساب: [+967 717 348 644](https://wa.me/967717348644)  
+- ☎️ الهاتف / واتساب: [967717348644+](https://wa.me/967717348644)  
 - 📺 يوتيوب: [@l._ (قناة أسامة فاضل)](https://www.youtube.com/@l._)  
-- 💬 تيليجرام: [@osamhfadel](https://t.me/osamhfadel)  
+- 💬 انستقرام: [المبرمج م/اسامة فاضل](https://instagram/lk_112l)  
 - 🧠 GitHub: [HACKSOSS](https://github.com/HACKSOSS)  
 
 ---
