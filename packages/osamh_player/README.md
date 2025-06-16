@@ -1,54 +1,80 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/[YOUR_USERNAME]/osamhplayer/main/media/logo.png" width="200"/>
-</p>
+مشغل أوسام المتقدم - Osamh Player
+<p align="center"> <img src="https://raw.githubusercontent.com/HACKSOSS/osamhplayer/main/media/logo.png" width="200"/> <br/> <b>مشغل الوسائط الأكثر تطوراً وتخصيصاً في عالم Flutter</b> </p>
+🚀 نظرة عامة
+مشغل أوسام (Osamh Player) هو حل متكامل لتشغيل الفيديوهات بجودة احترافية، مصمم خصيصاً لتلبية احتياجات المطورين والمستخدمين النهائيين الذين يبحثون عن تجربة مشاهدة استثنائية. بُني هذا المشغل على أساسيات قوية مع إضافات مبتكرة تجعله الأفضل في فئته.
 
-<h1 align="center">🎬 Osamh Player</h1>
+✨ المميزات الفريدة
+تشغيل متعدد المصادر: يدعم تشغيل الفيديوهات من الشبكة، الملفات المحلية، وحتى التخزين السحابي
 
-<p align="center">
-  <b>مشغّل فيديو متقدّم مصمم بعناية للمطورين العصريين باستخدام Flutter.</b><br/>
-  <i>بُني على BetterPlayer، مع تحسينات جوهرية ودعم خصائص احترافية.</i>
-</p>
+دعم الصيغ الحديثة: تشغيل سلس لتنسيقات HLS، DASH مع دعم كامل لتقنيات DRM مثل Widevine و FairPlay
 
-<p align="center">
-  <a href="https://pub.dev/packages/osamh_player"><img src="https://img.shields.io/pub/v/osamhplayer.svg"></a>
-  <a href="https://github.com/HACKSOSS/osamhfadel/blob/main/packages/osamh_player/LICENSE"><img src="https://img.shields.io/github/license/HACKSOSS/osamhplayer.svg?style=flat"></a>
-  <a href="#"><img src="https://img.shields.io/badge/platform-flutter-blue.svg"></a>
-</p>
+واجهة قابلة للتخصيص بالكامل: تحكم كامل في كل عنصر من عناصر الواجهة
 
----
+أداء محسن: تشغيل سلس حتى على الأجهزة محدودة الموارد
 
-## ✨ نظرة عامة
+دعم متعدد اللغات: ترجمات مدمجة مع دعم لتنسيقات SRT و WebVTT
 
-`osamh_player` هو مشغل فيديو شامل يدعم الميزات المتقدمة مثل الترجمة، التشغيل التكيّفي (HLS, DASH)، تشغيل القوائم، والدمج السلس مع واجهات Flutter.  
-تم تصميمه ليكون **قابل للتخصيص، قوي الأداء، وسهل الاستخدام**.
+📱 منصات مدعومة
+Android (من الإصدار 5.0 فما فوق)
 
-<table>
-  <tr>
+iOS (من الإصدار 11.0 فما فوق)
 
-  </tr>
-</table>
+Web (بدعم محدود لبعض الميزات)
 
----
+Windows و Linux و macOS (في الطريق)
 
-## 🚀 المميزات
-
-- ✅ دعم تشغيل الفيديوهات من الشبكة أو الملفات
-- ✅ دعم **HLS** و **DASH** و **DRM** (مثل Widevine و FairPlay)
-- ✅ دعم الترجمة (SRT, WebVTT) مع إمكانية التخصيص
-- ✅ إمكانية تشغيل الفيديوهات داخل ListView / GridView بسلاسة
-- ✅ دعم القوائم (Playlists)
-- ✅ تحكم كامل في الواجهة (Play/Pause, Seek, Speed, Fullscreen)
-- ✅ أداء محسّن على Android و iOS
-
----
-
-## 🛠️ الاستخدام الأساسي
-
-```dart
+💻 أمثلة الاستخدام
+التشغيل الأساسي
+dart
 import 'package:osamh_player/osamh_player.dart';
 
-final controller = OsamhPlayerController.network(
-  'https://your-video-url.m3u8',
+final playerController = OsamhPlayerController.network(
+  'https://example.com/video.m3u8',
+  videoQuality: VideoQuality.ultraHD,
+  autoPlay: true,
 );
 
-OsamhPlayer(controller: controller);
+@override
+Widget build(BuildContext context) {
+  return Scaffold(
+    body: Center(
+      child: OsamhPlayer(controller: playerController),
+    ),
+  );
+}
+التشغيل المتقدم مع القوائم
+dart
+final playlistController = OsamhPlaylistController(
+  playlist: [
+    OsamhVideoItem.network('https://example.com/video1.mp4'),
+    OsamhVideoItem.network('https://example.com/video2.m3u8'),
+    OsamhVideoItem.file('/path/to/local/video.mp4'),
+  ],
+  loopPlaylist: true,
+);
+
+OsamhPlaylistPlayer(controller: playlistController);
+📞 تواصل مع المطور
+نرحب بملاحظاتكم واستفساراتكم! يمكنكم التواصل معي عبر:
+
+البريد الإلكتروني: osamh.dev@example.com
+
+الهاتف: +967 717348644 (اليمن)
+
+تويتر: @OsamhDev
+
+GitHub: HACKSOSS
+
+🌟 لماذا اخترت مشغل أوسام؟
+أداء لا مثيل له: محسن ليعمل بسلاسة حتى مع دقة 4K
+
+أمان عالي: دعم لتقنيات حماية المحتوى المتقدمة
+
+تحديثات مستمرة: فريق دعم فني متواجد دائماً لتلبية احتياجاتك
+
+مجتمع نشط: انضم إلى آلاف المطورين الذين يثقون بمشغل أوسام
+
+📜 الترخيص
+هذا المشروع مرخص تحت شروط رخصة MIT.
+
+<p align="center"> <b>جرب تجربة المشغل المختلف الذي سيغير مفهومك لتشغيل الفيديو!</b> <br/><br/> <img src="https://raw.githubusercontent.com/HACKSOSS/osamhplayer/main/media/screenshot1.png" width="300"/> <img src="https://raw.githubusercontent.com/HACKSOSS/osamhplayer/main/media/screenshot2.png" width="300"/> </p>
