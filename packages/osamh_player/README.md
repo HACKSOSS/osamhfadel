@@ -24,9 +24,7 @@
 
 <table>
   <tr>
-    <td><img width="250px" src="https://github.com/HACKSOSS/osamhfadel/blob/main/packages/osamh_player/media/1.png"/></td>
-    <td><img width="250px" src="https://github.com/HACKSOSS/osamhfadel/blob/main/packages/osamh_player/media/2.png"/></td>
-    <td><img width="250px" src="https://github.com/HACKSOSS/osamhfadel/blob/main/packages/osamh_player/media/3.png"/></td>
+
   </tr>
 </table>
 
