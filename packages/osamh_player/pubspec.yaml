@@ -1,8 +1,8 @@
 name: osamhplayer
 description: Advanced video player. It solves many typical use cases and it's easy to run.
 version: 0.0.90
-homepage: https://github.com/jhomlala/betterplayer
-documentation: https://jhomlala.github.io/betterplayer/
+homepage: https://github.com/HACKSOSS/link/tree/main/packages/osamh_player
+documentation: https://github.com/HACKSOSS/link/tree/main/packages/osamh_player
 publisher: osamhfadel.com
 environment:
   sdk: ">=3.0.0 <4.0.0"
