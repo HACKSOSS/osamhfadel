@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://pub.dev/packages/osamhplayer"><img src="https://img.shields.io/pub/v/osamhplayer.svg"></a>
-  <a href="https://github.com/HACKSOSS/osamhplayer/blob/main/LICENSE"><img src="https://img.shields.io/github/license/HACKSOSS/osamhplayer.svg?style=flat"></a>
+  <a href="https://github.com/HACKSOSS/osamhfadel/blob/main/packages/osamh_player/LICENSE"><img src="https://img.shields.io/github/license/HACKSOSS/osamhplayer.svg?style=flat"></a>
   <a href="#"><img src="https://img.shields.io/badge/platform-flutter-blue.svg"></a>
 </p>
 
