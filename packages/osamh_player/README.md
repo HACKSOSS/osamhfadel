@@ -71,7 +71,7 @@ OsamhPlayer(controller: controller);
 - 📧 البريد الإلكتروني: [programmer.osamh.fadel@gmail.com](mailto:programmer.osamh.fadel@gmail.com)  
 - ☎️ الهاتف / واتساب: [967717348644+](https://wa.me/967717348644)  
 - 📺 يوتيوب: [@l._ (قناة أسامة فاضل)](https://www.youtube.com/@l._)  
-- 💬 انستقرام: [المبرمج م/اسامة فاضل](https://instagram.com/lk_112l)  
+- 💬 انستقرام: [المبرمج م/اسامة فاضل](https://instagram.com/lky_112l)  
 - 🧠 GitHub: [HACKSOSS](https://github.com/HACKSOSS)  
 
 ---
