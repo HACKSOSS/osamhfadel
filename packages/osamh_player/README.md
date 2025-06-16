@@ -22,9 +22,10 @@
 ---
 
 <div align="center" style="margin: 40px 0;">
-
+  <img src="https://github.com/HACKSOSS/osamhfadel/blob/main/packages/osamh_player/media/osamh.jpg" width="450" style="border-radius: 50%; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" alt="Osamh Fadel"/>
+  <h2 style="margin-top: 10px; font-weight: 800; color: #1E40AF;">من هو أسامة فاضل</h2>
   <p style="max-width: 500px; color: #374151; font-size: 1.1rem; line-height: 1.6;">
-    مبرمج ومطوّر حلول Flutter وتطبيقات وسائط احترافية. لدي خبرة واسعة في بناء مشغلات فيديو وتطبيقات بث بجودة عالية، وأعمل على تطوير أدوات مفتوحة المصدر للمجتمع.
+    مهندس برمجيات محترف بخبرة واسعة في تطوير تطبيقات الموبايل لنظامي (iOS و Android) باستخدام Flutter، وتطوير تطبيقات ومواقع الويب. يمتلك مهارات قوية في برمجة ادوات بلغة Python، وسحب البيانات من مواقع الويب، وتشفيرها وفك تشفيرها.
   </p>
 </div>
 
@@ -81,8 +82,7 @@ OsamhPlayer(controller: controller);
 - 💻 [كود المصدر](https://github.com/HACKSOSS/osamhplayer)  
 - 📦 [مثال عملي (example)](https://github.com/HACKSOSS/osamhplayer/tree/main/example)  
 
----  <img src="https://github.com/HACKSOSS/osamhfadel/blob/main/packages/osamh_player/media/osamh.jpg" width="450" style="border-radius: 50%; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" alt="Osamh Fadel"/>
-  <h2 style="margin-top: 10px; font-weight: 800; color: #1E40AF;">أسامة فاضل</h2>
+---
 
 ## 🙋‍♂️ عن المطور
 
