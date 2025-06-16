@@ -21,30 +21,10 @@
 
 ---
 
-<div align="center" style="margin: 40px 0;">
-  <img src="https://github.com/HACKSOSS/osamhfadel/blob/main/packages/osamh_player/media/osamh.jpg" width="450" style="border-radius: 50%; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" alt="Osamh Fadel"/>
-  <h2 style="margin-top: 10px; font-weight: 800; color: #1E40AF;">من هو أسامة فاضل</h2>
-  <p style="max-width: 500px; color: #374151; font-size: 1.1rem; line-height: 1.6;">
-    مهندس برمجيات محترف بخبرة واسعة في تطوير تطبيقات الموبايل لنظامي (iOS و Android) باستخدام Flutter، وتطوير تطبيقات ومواقع الويب. يمتلك مهارات قوية في برمجة ادوات بلغة Python، وسحب البيانات من مواقع الويب، وتشفيرها وفك تشفيرها.
-  </p>
-</div>
-
----
-
 ## ✨ ما هو Osamh Player؟
 
 `osamh_player` هو حل فيديو متكامل مبني خصيصًا لمطوري Flutter الذين يحتاجون إلى تجربة وسائط غنية وقوية وسلسة.  
 صُمم ليكون أكثر من مجرد مشغّل فيديو، فهو يدعم الترجمة، DRM، البث المباشر، التشغيل داخل القوائم، التخصيص الكامل، وأكثر.
-
----
-
-<table>
-  <tr>
-    <td><img width="250px" src="https://raw.githubusercontent.com/HACKSOSS/osamhplayer/main/media/1.png" alt="Screenshot 1"/></td>
-    <td><img width="250px" src="https://raw.githubusercontent.com/HACKSOSS/osamhplayer/main/media/2.png" alt="Screenshot 2"/></td>
-    <td><img width="250px" src="https://raw.githubusercontent.com/HACKSOSS/osamhplayer/main/media/3.png" alt="Screenshot 3"/></td>
-  </tr>
-</table>
 
 ---
 
@@ -84,11 +64,13 @@ OsamhPlayer(controller: controller);
 
 ---
 
-## 🙋‍♂️ عن المطور
-
-**أسامة فاضل**  
-مبرمج ومطوّر حلول Flutter وتطبيقات وسائط احترافية. لدي خبرة واسعة في بناء مشغلات فيديو وتطبيقات بث بجودة عالية، وأعمل على تطوير أدوات مفتوحة المصدر للمجتمع.
-
+<div align="center" style="margin: 40px 0;">
+  <img src="https://github.com/HACKSOSS/osamhfadel/blob/main/packages/osamh_player/media/osamh.jpg" width="450" style="border-radius: 50%; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" alt="Osamh Fadel"/>
+  <h2 style="margin-top: 10px; font-weight: 800; color: #1E40AF;">من هو أسامة فاضل</h2>
+  <p style="max-width: 500px; color: #374151; font-size: 1.1rem; line-height: 1.6;">
+    مهندس برمجيات محترف بخبرة واسعة في تطوير تطبيقات الموبايل لنظامي (iOS و Android) باستخدام Flutter، وتطوير تطبيقات ومواقع الويب. يمتلك مهارات قوية في برمجة ادوات بلغة Python، وسحب البيانات من مواقع الويب، وتشفيرها وفك تشفيرها.
+  </p>
+</div>
 ---
 
 ## 📞 للتواصل
