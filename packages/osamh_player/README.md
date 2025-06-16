@@ -1,80 +1,96 @@
-مشغل أوسام المتقدم - Osamh Player
-<p align="center"> <img src="https://raw.githubusercontent.com/HACKSOSS/osamhplayer/main/media/logo.png" width="200"/> <br/> <b>مشغل الوسائط الأكثر تطوراً وتخصيصاً في عالم Flutter</b> </p>
-🚀 نظرة عامة
-مشغل أوسام (Osamh Player) هو حل متكامل لتشغيل الفيديوهات بجودة احترافية، مصمم خصيصاً لتلبية احتياجات المطورين والمستخدمين النهائيين الذين يبحثون عن تجربة مشاهدة استثنائية. بُني هذا المشغل على أساسيات قوية مع إضافات مبتكرة تجعله الأفضل في فئته.
 
-✨ المميزات الفريدة
-تشغيل متعدد المصادر: يدعم تشغيل الفيديوهات من الشبكة، الملفات المحلية، وحتى التخزين السحابي
+<p align="center">
+  <img src="https://raw.githubusercontent.com/HACKSOSS/osamhplayer/main/media/logo.png" width="200"/>
+</p>
 
-دعم الصيغ الحديثة: تشغيل سلس لتنسيقات HLS، DASH مع دعم كامل لتقنيات DRM مثل Widevine و FairPlay
+<h1 align="center">🎬 Osamh Player</h1>
 
-واجهة قابلة للتخصيص بالكامل: تحكم كامل في كل عنصر من عناصر الواجهة
+<p align="center">
+  <b>مشغّل فيديو احترافي متكامل صُمم خصيصًا للمطورين العصريين باستخدام Flutter.</b><br/>
+  <i>مبني على BetterPlayer مع تحسينات جوهرية، وأداء فائق، وتجربة مرنة قابلة للتخصيص.</i>
+</p>
 
-أداء محسن: تشغيل سلس حتى على الأجهزة محدودة الموارد
+<p align="center">
+  <a href="https://pub.dev/packages/osamh_player"><img src="https://img.shields.io/pub/v/osamh_player.svg?label=pub.dev&color=blue&logo=dart"></a>
+  <a href="https://github.com/HACKSOSS/osamhplayer/blob/main/LICENSE"><img src="https://img.shields.io/github/license/HACKSOSS/osamhplayer.svg?color=green"></a>
+  <a href="#"><img src="https://img.shields.io/badge/platform-flutter-02569B?logo=flutter"></a>
+</p>
 
-دعم متعدد اللغات: ترجمات مدمجة مع دعم لتنسيقات SRT و WebVTT
+---
 
-📱 منصات مدعومة
-Android (من الإصدار 5.0 فما فوق)
+## ✨ ما هو Osamh Player؟
 
-iOS (من الإصدار 11.0 فما فوق)
+`osamh_player` هو حل فيديو متكامل مبني خصيصًا لمطوري Flutter الذين يحتاجون إلى تجربة وسائط غنية وقوية وسلسة.  
+صُمم ليكون أكثر من مجرد مشغّل فيديو، فهو يدعم الترجمة، DRM، البث المباشر، التشغيل داخل القوائم، التخصيص الكامل، وأكثر.
 
-Web (بدعم محدود لبعض الميزات)
+---
 
-Windows و Linux و macOS (في الطريق)
+<table>
+  <tr>
+    <td><img width="250px" src="https://raw.githubusercontent.com/HACKSOSS/osamhplayer/main/media/1.png"/></td>
+    <td><img width="250px" src="https://raw.githubusercontent.com/HACKSOSS/osamhplayer/main/media/2.png"/></td>
+    <td><img width="250px" src="https://raw.githubusercontent.com/HACKSOSS/osamhplayer/main/media/3.png"/></td>
+  </tr>
+</table>
 
-💻 أمثلة الاستخدام
-التشغيل الأساسي
-dart
+---
+
+## 🚀 أبرز الميزات
+
+- 🎞️ تشغيل الفيديو من الإنترنت أو الملفات المحلية
+- 🌐 دعم كامل لـ HLS و DASH
+- 🔐 دعم حماية DRM مثل Widevine و FairPlay
+- 📝 دعم الترجمة (SRT و WebVTT) مع تحكم في المظهر والموقع
+- 🧠 دعم تشغيل الفيديوهات داخل ListView و GridView
+- 🎮 تحكم كامل بالواجهة: التشغيل/الإيقاف، التقديم، السرعة، الشاشة الكاملة، وغير ذلك
+- ⚙️ تخصيص مرن جدًا لواجهة المشغل والسلوك
+- ⚡ أداء عالي السلاسة على Android و iOS
+- 🔄 دعم التشغيل التلقائي، الحلقات، القوائم (Playlists)
+
+---
+
+## 🛠️ الاستخدام الأساسي
+
+```dart
 import 'package:osamh_player/osamh_player.dart';
 
-final playerController = OsamhPlayerController.network(
-  'https://example.com/video.m3u8',
-  videoQuality: VideoQuality.ultraHD,
-  autoPlay: true,
+final controller = OsamhPlayerController.network(
+  'https://your-video-url.m3u8',
 );
 
-@override
-Widget build(BuildContext context) {
-  return Scaffold(
-    body: Center(
-      child: OsamhPlayer(controller: playerController),
-    ),
-  );
-}
-التشغيل المتقدم مع القوائم
-dart
-final playlistController = OsamhPlaylistController(
-  playlist: [
-    OsamhVideoItem.network('https://example.com/video1.mp4'),
-    OsamhVideoItem.network('https://example.com/video2.m3u8'),
-    OsamhVideoItem.file('/path/to/local/video.mp4'),
-  ],
-  loopPlaylist: true,
-);
+OsamhPlayer(controller: controller);
+```
 
-OsamhPlaylistPlayer(controller: playlistController);
-📞 تواصل مع المطور
-نرحب بملاحظاتكم واستفساراتكم! يمكنكم التواصل معي عبر:
+---
 
-البريد الإلكتروني: osamh.dev@example.com
+## 📚 التوثيق والدعم
 
-الهاتف: +967 717348644 (اليمن)
+- 🌐 [الموقع الرسمي](https://osamhfadel.com/projects/osamhplayer)
+- 💻 [كود المصدر](https://github.com/HACKSOSS/osamhplayer)
+- 📦 [مثال عملي (example)](https://github.com/HACKSOSS/osamhplayer/tree/main/example)
 
-تويتر: @OsamhDev
+---
 
-GitHub: HACKSOSS
+## 🙋‍♂️ عن المطور
 
-🌟 لماذا اخترت مشغل أوسام؟
-أداء لا مثيل له: محسن ليعمل بسلاسة حتى مع دقة 4K
+**أسامة فاضل**  
+مبرمج ومطوّر حلول Flutter وتطبيقات وسائط احترافية. لدي خبرة واسعة في بناء مشغلات فيديو وتطبيقات بث بجودة عالية، وأعمل على تطوير أدوات مفتوحة المصدر للمجتمع.
 
-أمان عالي: دعم لتقنيات حماية المحتوى المتقدمة
+---
 
-تحديثات مستمرة: فريق دعم فني متواجد دائماً لتلبية احتياجاتك
+## 📞 للتواصل
 
-مجتمع نشط: انضم إلى آلاف المطورين الذين يثقون بمشغل أوسام
+أنا متاح دائمًا للتعاون، الاستشارات، أو دعم المشاريع الخاصة:
 
-📜 الترخيص
-هذا المشروع مرخص تحت شروط رخصة MIT.
+- 🌍 الموقع: [osamhfadel.com](https://osamhfadel.com)
+- 📧 البريد الإلكتروني: [programmer.osamh.fadel@gmail.com](mailto:programmer.osamh.fadel@gmail.com)
+- ☎️ الهاتف / واتساب: [+967 717 348 644](https://wa.me/967717348644)
+- 📺 يوتيوب: [@l._ (قناة أسامة فاضل)](https://www.youtube.com/@l._)
+- 💬 تيليجرام: [@osamhfadel](https://t.me/osamhfadel)
+- 🧠 GitHub: [HACKSOSS](https://github.com/HACKSOSS)
 
-<p align="center"> <b>جرب تجربة المشغل المختلف الذي سيغير مفهومك لتشغيل الفيديو!</b> <br/><br/> <img src="https://raw.githubusercontent.com/HACKSOSS/osamhplayer/main/media/screenshot1.png" width="300"/> <img src="https://raw.githubusercontent.com/HACKSOSS/osamhplayer/main/media/screenshot2.png" width="300"/> </p>
+---
+
+<p align="center">
+  💙 شكراً لدعمك Osamh Player — كل مشاركة أو نجمة تعني لي الكثير 🙏
+</p>
