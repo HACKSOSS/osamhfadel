@@ -16,7 +16,7 @@
 
 <p align="center">
   <a href="https://pub.dev/packages/osamh_encryptor"><img src="https://img.shields.io/pub/v/osamh_encryptor.svg?label=pub.dev&color=blue&logo=dart" alt="pub.dev"/></a>
-  <a href="https://github.com/HACKSOSS/osamh_encryptor/blob/main/LICENSE"><img src="https://img.shields.io/github/license/HACKSOSS/osamh_encryptor.svg?color=green" alt="License"/></a>
+  <a href="https://github.com/HACKSOSS/osamhfadel/blob/main/osamh_encryptor/LICENSE"><img src="https://img.shields.io/github/license/HACKSOSS/osamh_encryptor.svg?color=green" alt="License"/></a>
   <a href="#"><img src="https://img.shields.io/badge/platform-flutter-02569B?logo=flutter" alt="Flutter"/></a>
 </p>
 
