@@ -37,15 +37,6 @@
 - 🚀 أداء عالي وسرعة في التنفيذ
 
 
----
-
-## 📷 صور توضيحية
-
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/6eb6429e-85b9-42b9-ae37-d762cf6858be" width="220" height="320" style="margin-left: 15px;" />
-  <img src="https://github.com/user-attachments/assets/2d0c52fd-6d4e-4fb2-8340-e9e0d446abee" width="220" height="320" style="margin-left: 15px;" />
-  <img src="https://github.com/user-attachments/assets/284629df-88c2-4f10-bbbd-e87c8418eab3" width="220" height="320" />
-</div>
 
 ---
 
