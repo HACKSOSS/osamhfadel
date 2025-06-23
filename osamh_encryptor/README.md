@@ -36,26 +36,6 @@
 - 📱 دعم كامل لـ Android و iOS باستخدام كود أصلي Native
 - 🚀 أداء عالي وسرعة في التنفيذ
 
----
-
-## 🛠️ الاستخدام الأساسي
-
-```dart
-import 'package:osamh_encryptor/osamh_encryptor.dart';
-
-final encryptor = OsamhEncryptor();
-final pass = 'كلمة_سر_سرية';
-
-final encrypted = await encryptor.encrypt(
-  passPhrase: pass,
-  contentToEncrypt: 'نص سري',
-);
-
-final decrypted = await encryptor.decrypt(
-  passPhrase: pass,
-  concatenatedCipherText: encrypted,
-);
-```
 
 ---
 
