@@ -1,7 +1,7 @@
 <div dir="rtl" align="right">
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/HACKSOSS/osamhfadel/main/packages/osamh_encryptor/٢٠٢٥٠٦٢٣_٢١٠٣٢٦.jpg" width="350"/>
+  <img src="https://raw.githubusercontent.com/HACKSOSS/osamhfadel/blob/main/osamh_encryptor/٢٠٢٥٠٦٢٣_٢١٠٣٢٦.jpg" width="350"/>
 </p>
 
 <h1 align="center" style="font-weight: 900; font-size: 3.5rem; color: #1E40AF;">🛡️ Osamh Encryptor</h1>
