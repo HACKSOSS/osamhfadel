@@ -1,138 +1,50 @@
-**Native Encryptor for Flutter**
+<div dir="rtl" align="right">
 
-_A powerful plugin for secure data handling in your Flutter apps._
+<p align="center">
+  <img src="https://raw.githubusercontent.com/osamhfadel/osamh_encryptor/main/assets/encryption_banner.png" width="350"/>
+</p>
 
-**Key Features**
+<h1 align="center" style="font-weight: 900; font-size: 3.5rem; color: #1E40AF;">🔒 Osamh Encryptor</h1>
 
-*   Native Code Integration: Ensures top-tier security and performance.
-*   Random Salt & IV: Adds an extra layer of protection.
-*   Passphrase-Based Encryption: Customizable and flexible security.
-*   User-Friendly API:** Simplifies integration into your Flutter app.
-*   Cross-Platform Compatibility: Works seamlessly on both iOS and Android.
+<p align="center" style="font-size: 1.3rem; font-weight: 700; color: #2563EB;">
+  مكتبة تشفير متقدمة بتقنيات الأمان القصوى لمطوري Flutter
+</p>
 
-### Screenshots
+<p align="center" style="font-style: italic; font-size: 1.1rem; color: #4B5563;">
+  تجمع بين أداء الكود الأصلي وسهولة Dart في حزمة واحدة آمنة
+</p>
 
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/6eb6429e-85b9-42b9-ae37-d762cf6858be" alt="encrypted_value" width="220" height="320" style="margin-right: 15px;" />
-  <img src="https://github.com/user-attachments/assets/2d0c52fd-6d4e-4fb2-8340-e9e0d446abee" alt="decrypted_value" width="220" height="320" style="margin-right: 15px;" />
-  <img src="https://github.com/user-attachments/assets/284629df-88c2-4f10-bbbd-e87c8418eab3" alt="input_content" width="220" height="320" />
-</div>
+<p align="center">
+  <a href="https://pub.dev/packages/osamh_encryptor"><img src="https://img.shields.io/pub/v/osamh_encryptor.svg?label=pub.dev&color=blue&logo=dart" alt="pub.dev"/></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/osamhfadel/osamh_encryptor.svg?color=green" alt="License"/></a>
+  <a href="#"><img src="https://img.shields.io/badge/platform-flutter-02569B?logo=flutter" alt="Flutter"/></a>
+</p>
 
-**Installation**
+---
 
-1.  **Add to `pubspec.yaml`:**
-     
-     YAML
-    
-   ```
-  dependencies:
-      native_encryptor: <latest_version>
-   ```
-    
-2.  **Fetch the plugin:**
-  
-  Bash
-   
-   ```
-   flutter pub get
-   ```
-  
-3.  **Import in your Dart code:**
-  Dart
-    ```
-     import 'package:native_encryptor/native_encryptor.dart';
-    ```
+## ✨ المقدمة
+مكتبة `osamh_encryptor` توفر حلول تشفير آمنة لتطبيقات Flutter باستخدام:
 
-**Basic Usage**
+- تشفير AES-256 عبر الكود الأصلي (Native)
+- توليد مفاتيح آمنة
+- دعم كامل لنظامي Android و iOS
 
-Dart
+## 🌟 المميزات
+| الميزة | الوصف |
+|--------|-------|
+| 🔐 تشفير متقدم | خوارزميات AES-256 مع Salt و IV عشوائي |
+| ⚡ أداء عالي | تنفيذ عبر الكود الأصلي لأقصى سرعة |
+| 📱 متعدد المنصات | يدعم Android و iOS بنفس الجودة |
+| 🧩 سهولة الاستخدام | واجهة برمجة بسيطة وسلسة |
 
-```
-import 'package:flutter/material.dart';
-import 'package:native_encryptor/native_encryptor.dart';
+## 💻 متطلبات التشغيل
+- Flutter SDK 3.0.0 أو أعلى
+- Dart 2.17.0 أو أعلى
+- Android API 21+ / iOS 11+
 
-void main() {
-  runApp(const MyApp());
-}
+## 📦 التثبيت
+أضف الاعتماد في `pubspec.yaml`:
 
-class MyApp extends StatefulWidget {
-  const MyApp({super.key});
-
-  @override
-  State<MyApp> createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  final    _nativeEncryptorPlugin = NativeEncryptor();
-  final TextEditingController _controller = TextEditingController(text: "Secret Message");
-  String? encryptedData;
-  String? decryptedData;
-  final String passphrase = "YourSecretPassphrase";
-
-  Future<void> encrypt() async {
-    encryptedData = await _nativeEncryptorPlugin.encrypt(
-      passPhrase: passphrase,
-      contentToEncrypt: _controller.text,
-    );
-    setState(() {});
-  }
-
-  Future<void> decrypt() async {
-    decryptedData = await _nativeEncryptorPlugin.decrypt(
-      passPhrase: passphrase,
-      concatenatedCipherText: encryptedData!,
-    );
-    setState(() {});
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(title: const Text('Native    Encryptor')),
-        body: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            children: [
-              TextField(
-                controller: _controller,
-                decoration: const InputDecoration(labelText:    'Enter text'),
-              ),
-              ElevatedButton(onPressed: encrypt, child: const Text('Encrypt')),
-              if (encryptedData != null)
-                Text('Encrypted: $encryptedData'),
-              ElevatedButton(onPressed: decrypt, child: const Text('Decrypt')),
-              if (decryptedData != null)
-                Text('Decrypted: $decryptedData'),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-```
-**API Reference**
-
-*  `encrypt({required String passPhrase, required String contentToEncrypt})` Encrypts the given content with the provided passphrase.
-      Returns: The encrypted data as a string.
-*  `decrypt({required String passPhrase, required String concatenatedCipherText})` Decrypts the given encrypted data with the provided passphrase.
-    Returns: The original decrypted content.
-*  `getPlatformVersion()` Retrieves the current platform version for debugging purposes.
-
-**License**
-
-This plugin is licensed under the MIT License.
-
-**Contributing**
-
-We welcome contributions! Please feel free to open issues or submit pull requests.
-
-**Connect with me:**
-
-* **GitHub:** https://github.com/subhashDev11
-* **LinkedIn:** https://www.linkedin.com/in/subhashcs/
-* **Medium:** https://medium.com/@subhashchandrashukla
-
-**Enhance your Flutter app's security with Native Encryptor!**
-
+```yaml
+dependencies:
+  osamh_encryptor: ^1.0.0
